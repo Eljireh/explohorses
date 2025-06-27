@@ -1,6 +1,7 @@
 package io.github.eljireh.Block;
 
 import io.github.eljireh.ExplosiveHorses;
+import io.github.eljireh.Item.ModCreativeModTab;
 import io.github.eljireh.Item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -18,9 +19,9 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, ExplosiveHorses.MOD_ID);
 
-    public static final RegistryObject<Block> AMETRINE_BLOCK = registerBlock("ametrine_block",
+    public static final RegistryObject<Block> AMETRINE_BLOCK = ModCreativeModTab.addBlockToTab(registerBlock("ametrine_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHER_BRICKS)));
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHER_BRICKS))));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

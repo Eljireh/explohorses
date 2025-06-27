@@ -11,11 +11,11 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ExplosiveHorses.MOD_ID);
 
-    public static final RegistryObject<Item> AMETRINE = ITEMS.register("ametrine",
-            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> AMETRINE = ModCreativeModTab.addToTab(ITEMS.register("ametrine",
+            () -> new Item(new Item.Properties())));
 
-    public static final RegistryObject<Item> SCRATCHED_HIDE = ITEMS.register("scratched_hide",
-            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SCRATCHED_HIDE = ModCreativeModTab.addToTab(ITEMS.register("scratched_hide",
+            () -> new Item(new Item.Properties())));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

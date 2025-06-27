@@ -2,6 +2,7 @@ package io.github.eljireh;
 
 import com.mojang.logging.LogUtils;
 import io.github.eljireh.Block.ModBlocks;
+import io.github.eljireh.Item.ModCreativeModTab;
 import io.github.eljireh.Item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -32,6 +33,8 @@ public class ExplosiveHorses {
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModTab.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
