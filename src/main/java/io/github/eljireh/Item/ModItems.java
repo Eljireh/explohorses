@@ -17,6 +17,9 @@ public class ModItems {
     public static final RegistryObject<Item> SCRATCHED_HIDE = ModCreativeModTab.addToTab(ITEMS.register("scratched_hide",
             () -> new Item(new Item.Properties())));
 
+    public static final RegistryObject<Item> FLINT_AND_AMETRINE = ModCreativeModTab.addToTab(ITEMS.register("flint_and_ametrine",
+            () -> new Item(new Item.Properties())));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

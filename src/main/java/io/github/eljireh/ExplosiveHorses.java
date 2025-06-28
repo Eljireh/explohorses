@@ -55,6 +55,7 @@ public class ExplosiveHorses {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.AMETRINE);
             event.accept(ModItems.SCRATCHED_HIDE);
+            event.accept(ModItems.FLINT_AND_AMETRINE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
