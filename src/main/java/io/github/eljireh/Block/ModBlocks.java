@@ -1,5 +1,6 @@
 package io.github.eljireh.Block;
 
+import io.github.eljireh.Block.Custom.HorseyTntBlock;
 import io.github.eljireh.ExplosiveHorses;
 import io.github.eljireh.Item.ModCreativeModTab;
 import io.github.eljireh.Item.ModItems;
@@ -21,7 +22,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> AMETRINE_BLOCK = ModCreativeModTab.addBlockToTab(registerBlock("ametrine_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHER_BRICKS))));
+                    .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.NETHER_BRICKS))));
+
+    public static final RegistryObject<Block> HORSEY_TNT = ModCreativeModTab.addBlockToTab(registerBlock("horsey_tnt",
+            () -> new HorseyTntBlock(BlockBehaviour.Properties.of().instabreak().sound(SoundType.WOOL).ignitedByLava())));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

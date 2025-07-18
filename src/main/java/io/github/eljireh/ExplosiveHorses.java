@@ -56,10 +56,13 @@ public class ExplosiveHorses {
             event.accept(ModItems.AMETRINE);
             event.accept(ModItems.SCRATCHED_HIDE);
             event.accept(ModItems.FLINT_AND_AMETRINE);
+            event.accept(ModItems.IRON_CARROT);
+            event.accept(ModItems.HORSEY_NITRO);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.AMETRINE_BLOCK);
+            event.accept(ModBlocks.HORSEY_TNT);
         }
     }
 

@@ -2,6 +2,11 @@
   "item.explohorses.ametrine": "Ametrine",
   "item.explohorses.scratched_hide": "Scratched Hide",
   "item.explohorses.flint_and_ametrine": "Flint and Ametrine",
+  "item.explohorses.iron_carrot": "Iron Carrot",
+  "item.explohorses.horsey_nitro": "Horsey Nitro",
+
   "block.explohorses.ametrine_block": "Block of Ametrine",
+  "block.explohorses.horsey_tnt": "Horsey TNT",
+
   "creativetab.explohorses.explosive_horses_items": "Explosive Horses"
 }

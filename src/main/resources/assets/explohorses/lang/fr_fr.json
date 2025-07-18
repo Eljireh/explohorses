@@ -2,6 +2,11 @@
   "item.explohorses.ametrine": "Amétrine",
   "item.explohorses.scratched_hide": "Peau Éraflée",
   "item.explohorses.flint_and_ametrine": "Briquet en Amétrine",
+  "item.explohorses.iron_carrot": "Carotte Ferreuse",
+  "item.explohorses.horsey_nitro": "Nitro Chevaline",
+
   "block.explohorses.ametrine_block": "Bloc d'Amétrine",
+  "block.explohorses.horsey_tnt": "TNT Chevaline",
+
   "creativetab.explohorses.explosive_horses_items": "Explosive Horses"
 }

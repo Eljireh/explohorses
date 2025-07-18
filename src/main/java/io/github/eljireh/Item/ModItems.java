@@ -1,6 +1,8 @@
 package io.github.eljireh.Item;
 
 import io.github.eljireh.ExplosiveHorses;
+import io.github.eljireh.Item.Custom.HorseyNitroItem;
+import net.minecraft.world.item.FlintAndSteelItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,7 +20,13 @@ public class ModItems {
             () -> new Item(new Item.Properties())));
 
     public static final RegistryObject<Item> FLINT_AND_AMETRINE = ModCreativeModTab.addToTab(ITEMS.register("flint_and_ametrine",
-            () -> new Item(new Item.Properties())));
+            () -> new FlintAndSteelItem(new Item.Properties().durability(100))));
+
+    public static final RegistryObject<Item> IRON_CARROT = ModCreativeModTab.addToTab(ITEMS.register("iron_carrot",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.IRON_CARROT))));
+
+    public static final RegistryObject<Item> HORSEY_NITRO = ModCreativeModTab.addToTab(ITEMS.register("horsey_nitro",
+            () -> new HorseyNitroItem(new Item.Properties())));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
