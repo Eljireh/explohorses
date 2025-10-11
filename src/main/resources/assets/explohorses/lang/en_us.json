@@ -4,9 +4,22 @@
   "item.explohorses.flint_and_ametrine": "Flint and Ametrine",
   "item.explohorses.iron_carrot": "Iron Carrot",
   "item.explohorses.horsey_nitro": "Horsey Nitro",
+  "item.explohorses.music_disc_look_at_my_clean_horse": "Music Disc",
+  "item.explohorses.music_disc_look_at_my_clean_horse.desc": "Weebl - Look At My (Clean) Horse",
+
+  "item.explohorses.hide_cap": "Hide Cap",
+  "item.explohorses.hide_tunic": "Hide Tunic",
+  "item.explohorses.hide_pants": "Hide Pants",
+  "item.explohorses.hide_boots": "Hide Boots",
 
   "block.explohorses.ametrine_block": "Block of Ametrine",
   "block.explohorses.horsey_tnt": "Horsey TNT",
+  "block.explohorses.ametrine_door": "Ametrine Door",
+
+  "tooltip.explohorses.horsey_tnt.tooltip": "§aI love my horsey and my horsey§r",
+  "tooltip.explohorses.horsey_tnt.tooltip2": "§aloves me§r",
+  "tooltip.explohorses.horsey_nitro.tooltip": "§7Press Ctrl for details§r",
+  "tooltip.explohorses.horsey_nitro.ctrltooltip": "§dA mind-blowing drink§r",
 
   "creativetab.explohorses.explosive_horses_items": "Explosive Horses"
 }

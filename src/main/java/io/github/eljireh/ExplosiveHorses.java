@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import io.github.eljireh.Block.ModBlocks;
 import io.github.eljireh.Item.ModCreativeModTab;
 import io.github.eljireh.Item.ModItems;
+import io.github.eljireh.component.ModDataComponentTypes;
+import io.github.eljireh.sound.ModSounds;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -38,6 +40,10 @@ public class ExplosiveHorses {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponentTypes.register(modEventBus);
+
+        ModSounds.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

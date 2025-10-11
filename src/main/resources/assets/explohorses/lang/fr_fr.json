@@ -4,9 +4,22 @@
   "item.explohorses.flint_and_ametrine": "Briquet en Amétrine",
   "item.explohorses.iron_carrot": "Carotte Ferreuse",
   "item.explohorses.horsey_nitro": "Nitro Chevaline",
+  "item.explohorses.music_disc_look_at_my_clean_horse": "Disque",
+  "item.explohorses.music_disc_look_at_my_clean_horse.desc": "Weebl - Look At My (Clean) Horse",
+
+  "item.explohorses.hide_cap": "Chapeau en Peau",
+  "item.explohorses.hide_tunic": "Tunique en Peau",
+  "item.explohorses.hide_pants": "Pantalon en Peau",
+  "item.explohorses.hide_boots": "Bottes en Peau",
 
   "block.explohorses.ametrine_block": "Bloc d'Amétrine",
   "block.explohorses.horsey_tnt": "TNT Chevaline",
+  "block.explohorses.ametrine_door": "Porte en Amétrine",
+
+  "tooltip.explohorses.horsey_tnt.tooltip": "§aLe cheval, le cheval§r",
+  "tooltip.explohorses.horsey_tnt.tooltip2": "§ale cheval, c'est génial§r",
+  "tooltip.explohorses.horsey_nitro.tooltip": "§7Appuyer sur Ctrl pour voir les détails§r",
+  "tooltip.explohorses.horsey_nitro.ctrltooltip": "§dFait sauter de joie§r",
 
   "creativetab.explohorses.explosive_horses_items": "Explosive Horses"
 }

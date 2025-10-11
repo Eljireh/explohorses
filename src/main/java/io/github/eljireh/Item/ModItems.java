@@ -2,6 +2,8 @@ package io.github.eljireh.Item;
 
 import io.github.eljireh.ExplosiveHorses;
 import io.github.eljireh.Item.Custom.HorseyNitroItem;
+import io.github.eljireh.sound.ModSounds;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.FlintAndSteelItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,6 +29,25 @@ public class ModItems {
 
     public static final RegistryObject<Item> HORSEY_NITRO = ModCreativeModTab.addToTab(ITEMS.register("horsey_nitro",
             () -> new HorseyNitroItem(new Item.Properties())));
+
+    public static final RegistryObject<Item> HIDE_CAP = ModCreativeModTab.addToTab(ITEMS.register("hide_cap",
+            () -> new ArmorItem(ModArmorMaterials.HIDE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(15)))));
+
+    public static final RegistryObject<Item> HIDE_TUNIC = ModCreativeModTab.addToTab(ITEMS.register("hide_tunic",
+            () -> new ArmorItem(ModArmorMaterials.HIDE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(15)))));
+
+    public static final RegistryObject<Item> HIDE_PANTS = ModCreativeModTab.addToTab(ITEMS.register("hide_pants",
+            () -> new ArmorItem(ModArmorMaterials.HIDE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(15)))));
+
+    public static final RegistryObject<Item> HIDE_BOOTS = ModCreativeModTab.addToTab(ITEMS.register("hide_boots",
+            () -> new ArmorItem(ModArmorMaterials.HIDE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(15)))));
+
+    public static final RegistryObject<Item> LOOK_AT_MY_CLEAN_HORSE_DISC = ModCreativeModTab.addToTab(ITEMS.register("music_disc_look_at_my_clean_horse",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.LOOK_AT_MY_CLEAN_HORSE_KEY).stacksTo(1))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

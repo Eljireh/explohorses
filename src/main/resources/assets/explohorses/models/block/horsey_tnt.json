@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "explohorses:block/horsey_tnt_bottom",
-    "side": "explohorses:block/horsey_tnt_side",
-    "top": "explohorses:block/horsey_tnt_top"
-  }
-}
