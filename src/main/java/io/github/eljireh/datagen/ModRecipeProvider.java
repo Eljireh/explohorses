@@ -7,7 +7,6 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import java.util.concurrent.CompletableFuture;
@@ -40,6 +39,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('O', Items.IRON_NUGGET)
                 .unlockedBy(getHasName(Items.CARROT), has(Items.CARROT))
                 .unlockedBy(getHasName(Items.IRON_NUGGET), has(Items.IRON_NUGGET))
+                .save(pRecipeOutput);
+
+        // BAD APPLE
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BAD_APPLE.get())
+                .requires(Items.WHITE_DYE)
+                .requires(Items.BLACK_DYE)
+                .requires(Items.APPLE)
+                .unlockedBy(getHasName(ModItems.BAD_APPLE.get()), has(ModItems.BAD_APPLE.get()))
                 .save(pRecipeOutput);
 
         // AMETRINE BLOCK

@@ -1,0 +1,33 @@
+{
+  "item.explohorses.ametrine": "ǝuᴉɹʇǝɯ∀",
+  "item.explohorses.scratched_hide": "ǝpᴉH pǝɥɔʇɐɹɔS",
+  "item.explohorses.flint_and_ametrine": "ǝuᴉɹʇǝɯ∀ puɐ ʇuᴉlℲ",
+  "item.explohorses.iron_carrot": "ʇoɹɹɐƆ uoɹI",
+  "item.explohorses.bad_apple": "¡¡ǝldd∀ pɐq",
+  "item.explohorses.horsey_nitro": "oɹʇᴉN ʎǝsɹoH",
+  "item.explohorses.music_disc_look_at_my_clean_horse": "ɔsᴉp ɔᴉsnW",
+  "item.explohorses.music_disc_look_at_my_clean_horse.desc": "ǝsɹoH (uɐǝlƆ) ʎW ʇ∀ ʞoo˥ - lqǝǝM",
+  "item.explohorses.bristly_horse_spawn_egg": "ƃƃƎ uʍɐdS ǝsɹoH ʎlʇsᴉɹq",
+  "item.explohorses.sand_bomb_horse_spawn_egg": "ƃƃƎ uʍɐdS ǝsɹoH qɯoq puɐS",
+  "item.explohorses.bad_apple_spawn_egg": "ƃƃƎ uʍɐdS ¡¡ǝldd∀ pɐq",
+
+  "item.explohorses.hide_cap": "dɐƆ ǝpᴉH",
+  "item.explohorses.hide_tunic": "ɔᴉun┴ ǝpᴉH",
+  "item.explohorses.hide_pants": "sʇuɐԀ ǝpᴉH",
+  "item.explohorses.hide_boots": "sʇooq ǝpᴉH",
+
+  "block.explohorses.ametrine_block": "ǝuᴉɹʇǝɯ∀ ɟo ʞɔolq",
+  "block.explohorses.horsey_tnt": "┴N┴ ʎǝsɹoH",
+  "block.explohorses.ametrine_door": "ɹoop ǝuᴉɹʇǝɯ∀",
+
+  "tooltip.explohorses.horsey_tnt.tooltip": "§aǝɯ sǝʌol§r",
+  "tooltip.explohorses.horsey_tnt.tooltip2": "§7ʎǝsɹoɥ ʎɯ puɐ ʎǝsɹoɥ ʎɯ ǝʌol I§r",
+  "tooltip.explohorses.horsey_nitro.tooltip": "§aslᴉɐʇǝp ɹoɟ lɹʇƆ ssǝɹԀ§r",
+  "tooltip.explohorses.horsey_nitro.ctrltooltip": "§dʞuᴉɹp ƃuᴉʍolq-puᴉɯ ∀§r",
+
+  "creativetab.explohorses.explosive_horses_items": "sǝsɹoH ǝʌᴉsoldxƎ",
+
+  "entity.explohorses.bristly_horse": "ǝsɹoH ʎlʇsᴉɹq",
+  "entity.explohorses.sand_bomb_horse": "ǝsɹoH qɯoq puɐS",
+  "entity.explohorses.bad_apple_horse": "¡¡ǝldd∀ pɐq"
+}

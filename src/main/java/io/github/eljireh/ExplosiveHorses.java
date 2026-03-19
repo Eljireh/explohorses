@@ -5,7 +5,12 @@ import io.github.eljireh.Block.ModBlocks;
 import io.github.eljireh.Item.ModCreativeModTab;
 import io.github.eljireh.Item.ModItems;
 import io.github.eljireh.component.ModDataComponentTypes;
+import io.github.eljireh.entity.ModEntities;
+import io.github.eljireh.entity.client.BadAppleRenderer;
+import io.github.eljireh.entity.client.BristlyHorseRenderer;
+import io.github.eljireh.entity.client.SandBombHorseRenderer;
 import io.github.eljireh.sound.ModSounds;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -20,6 +25,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+
+import javax.swing.text.html.parser.Entity;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ExplosiveHorses.MOD_ID)
@@ -45,6 +52,8 @@ public class ExplosiveHorses {
 
         ModSounds.register(modEventBus);
 
+        ModEntities.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -63,6 +72,7 @@ public class ExplosiveHorses {
             event.accept(ModItems.SCRATCHED_HIDE);
             event.accept(ModItems.FLINT_AND_AMETRINE);
             event.accept(ModItems.IRON_CARROT);
+            event.accept(ModItems.BAD_APPLE);
             event.accept(ModItems.HORSEY_NITRO);
         }
 
@@ -83,7 +93,9 @@ public class ExplosiveHorses {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            EntityRenderers.register(ModEntities.BRISTLY_HORSE.get(), BristlyHorseRenderer::new);
+            EntityRenderers.register(ModEntities.SAND_BOMB_HORSE.get(), SandBombHorseRenderer::new);
+            EntityRenderers.register(ModEntities.BAD_APPLE_HORSE.get(), BadAppleRenderer::new);
         }
     }
 }
