@@ -51,6 +51,9 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.HIDE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(15)))));
 
+    public static final RegistryObject<Item> AWESOME_GOD_DISC = ModCreativeModTab.addToTab(ITEMS.register("music_disc_awesome_god",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.AWESOME_GOD_KEY).stacksTo(1))));
+
     public static final RegistryObject<Item> LOOK_AT_MY_CLEAN_HORSE_DISC = ModCreativeModTab.addToTab(ITEMS.register("music_disc_look_at_my_clean_horse",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.LOOK_AT_MY_CLEAN_HORSE_KEY).stacksTo(1))));
 

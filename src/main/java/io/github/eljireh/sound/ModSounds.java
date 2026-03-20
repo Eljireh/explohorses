@@ -15,6 +15,10 @@ public class ModSounds {
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, ExplosiveHorses.MOD_ID);
 
+    public static final RegistryObject<SoundEvent> AWESOME_GOD = registerSoundEvent("awesome_god");
+    public static final ResourceKey<JukeboxSong> AWESOME_GOD_KEY = ResourceKey.create(Registries.JUKEBOX_SONG,
+            ResourceLocation.fromNamespaceAndPath(ExplosiveHorses.MOD_ID, "awesome_god"));
+
     public static final RegistryObject<SoundEvent> LOOK_AT_MY_CLEAN_HORSE = registerSoundEvent("look_at_my_clean_horse");
     public static final ResourceKey<JukeboxSong> LOOK_AT_MY_CLEAN_HORSE_KEY = ResourceKey.create(Registries.JUKEBOX_SONG,
             ResourceLocation.fromNamespaceAndPath(ExplosiveHorses.MOD_ID, "look_at_my_clean_horse"));

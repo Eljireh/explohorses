@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.explohorses.music_disc_awesome_god.desc"
+  },
+  "length_in_seconds": 13,
+  "sound_event": "explohorses:awesome_god"
+}

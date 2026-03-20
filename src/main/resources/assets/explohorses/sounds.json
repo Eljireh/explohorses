@@ -6,5 +6,13 @@
         "stream": true
       }
     ]
+  },
+  "awesome_god": {
+    "sounds": [
+      {
+        "name": "explohorses:awesome_god",
+        "stream": true
+      }
+    ]
   }
 }

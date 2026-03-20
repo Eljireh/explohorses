@@ -24,6 +24,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.IRON_CARROT.get());
         basicItem(ModItems.BAD_APPLE.get());
         basicItem(ModItems.SCRATCHED_HIDE.get());
+        basicItem(ModItems.AWESOME_GOD_DISC.get());
         basicItem(ModItems.LOOK_AT_MY_CLEAN_HORSE_DISC.get());
         simpleBlockItem(ModBlocks.AMETRINE_DOOR);
 
