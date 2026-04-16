@@ -1,12 +1,4 @@
 {
-  "look_at_my_clean_horse": {
-    "sounds": [
-      {
-        "name": "explohorses:look_at_my_clean_horse",
-        "stream": true
-      }
-    ]
-  },
   "awesome_god": {
     "sounds": [
       {

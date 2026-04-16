@@ -5,7 +5,7 @@ import net.minecraft.client.animation.AnimationDefinition;
 import net.minecraft.client.animation.Keyframe;
 import net.minecraft.client.animation.KeyframeAnimations;
 
-public class BadAppleAnimations {
+public class HenryHorseAnimations {
         public static final AnimationDefinition horsey_walking = AnimationDefinition.Builder.withLength(2.0F).looping()
                 .addAnimation("neck", new AnimationChannel(AnimationChannel.Targets.ROTATION,
                         new Keyframe(0.0F, KeyframeAnimations.degreeVec(52.5F, 0.0F, 0.0F), AnimationChannel.Interpolations.LINEAR),

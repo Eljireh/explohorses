@@ -3,7 +3,7 @@ package io.github.eljireh.entity.client;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import io.github.eljireh.ExplosiveHorses;
-import io.github.eljireh.entity.custom.BadAppleEntity;
+import io.github.eljireh.entity.custom.HenryHorseEntity;
 import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
@@ -11,9 +11,9 @@ import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
 
-public class BadAppleModel<T extends BadAppleEntity> extends HierarchicalModel<T> {
+public class HenryHorseModel<T extends HenryHorseEntity> extends HierarchicalModel<T> {
     public static final ModelLayerLocation LAYER_LOCATION =
-            new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(ExplosiveHorses.MOD_ID, "bad_apple_horse"), "main");
+            new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(ExplosiveHorses.MOD_ID, "henry_horse"), "main");
     private final ModelPart fullbody;
     private final ModelPart neck;
     private final ModelPart head;
@@ -24,7 +24,7 @@ public class BadAppleModel<T extends BadAppleEntity> extends HierarchicalModel<T
     private final ModelPart front_right_leg;
     private final ModelPart back_right_leg;
 
-    public BadAppleModel(ModelPart root) {
+    public HenryHorseModel(ModelPart root) {
         this.fullbody = root.getChild("fullbody");
         this.neck = this.fullbody.getChild("neck");
         this.head = this.neck.getChild("head");
@@ -69,10 +69,10 @@ public class BadAppleModel<T extends BadAppleEntity> extends HierarchicalModel<T
 
 
     @Override
-    public void setupAnim(BadAppleEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+    public void setupAnim(HenryHorseEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
         this.root().getAllParts().forEach(ModelPart::resetPose);
 
-        this.animateWalk(BadAppleAnimations.horsey_walking, limbSwing, limbSwingAmount, 2f, 2.5f);
+        this.animateWalk(HenryHorseAnimations.horsey_walking, limbSwing, limbSwingAmount, 2f, 2.5f);
     }
 
     @Override
