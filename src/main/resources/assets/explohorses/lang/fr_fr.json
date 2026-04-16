@@ -23,7 +23,7 @@
   "tooltip.explohorses.horsey_tnt.tooltip": "§aLe cheval, le cheval§r",
   "tooltip.explohorses.horsey_tnt.tooltip2": "§ale cheval, c'est génial§r",
   "tooltip.explohorses.horsey_nitro.tooltip": "§7Appuyer sur Ctrl pour voir les détails§r",
-  "tooltip.explohorses.horsey_nitro.ctrltooltip": "§dExplose l§r",
+  "tooltip.explohorses.horsey_nitro.ctrltooltip": "§dExplosif, ne pas boire§r",
 
   "creativetab.explohorses.explosive_horses_items": "Explosive Horses",
 
