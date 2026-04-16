@@ -1,3 +1,4 @@
 Explosive Horses is a Minecraft mod for 1.21.1.
 
-<img width="1501" height="673" alt="explosivehorses" src="https://github.com/user-attachments/assets/6f48fafb-ba08-4e1f-90d4-3e768c0216a4" />
+<img width="724" height="315" alt="image" src="https://github.com/user-attachments/assets/d5ac88b2-aa0e-41e1-b1e8-d30fb700ca73" />
+
