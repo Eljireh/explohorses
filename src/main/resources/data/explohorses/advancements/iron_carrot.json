@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "requirement": {
+      "conditions": {
+        "item": {
+          "items": "explohorses:iron_carrot"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.explohorses.iron_carrot.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "explohorses:iron_carrot"
+    },
+    "title": {
+      "translate": "advancements.explohorses.iron_carrot.title"
+    }
+  }
+}

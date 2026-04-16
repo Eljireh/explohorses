@@ -1,7 +1,7 @@
 package io.github.eljireh.entity;
 
 import io.github.eljireh.ExplosiveHorses;
-import io.github.eljireh.entity.custom.BadAppleEntity;
+import io.github.eljireh.entity.custom.HenryHorseEntity;
 import io.github.eljireh.entity.custom.BristlyHorseEntity;
 import io.github.eljireh.entity.custom.SandBombHorseEntity;
 import net.minecraft.world.entity.EntityType;
@@ -23,9 +23,9 @@ public class ModEntities {
             ENTITY_TYPES.register("sand_bomb_horse", () -> EntityType.Builder.of(SandBombHorseEntity::new, MobCategory.CREATURE)
                     .sized(1.6f, 1.3965f).build("sand_bomb_horse"));
 
-    public static final RegistryObject<EntityType<BadAppleEntity>> BAD_APPLE_HORSE =
-            ENTITY_TYPES.register("bad_apple_horse", () -> EntityType.Builder.of(BadAppleEntity::new, MobCategory.CREATURE)
-                    .sized(1.6f, 1.3965f).build("bad_apple_horse"));
+    public static final RegistryObject<EntityType<HenryHorseEntity>> HENRY_HORSE =
+            ENTITY_TYPES.register("henry_horse", () -> EntityType.Builder.of(HenryHorseEntity::new, MobCategory.CREATURE)
+                    .sized(1.6f, 1.3965f).build("henry_horse"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

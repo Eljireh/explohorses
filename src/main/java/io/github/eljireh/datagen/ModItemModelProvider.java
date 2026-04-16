@@ -22,10 +22,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.FLINT_AND_AMETRINE.get());
         basicItem(ModItems.HORSEY_NITRO.get());
         basicItem(ModItems.IRON_CARROT.get());
-        basicItem(ModItems.BAD_APPLE.get());
+        basicItem(ModItems.HEALING_APPLE.get());
         basicItem(ModItems.SCRATCHED_HIDE.get());
         basicItem(ModItems.AWESOME_GOD_DISC.get());
-        basicItem(ModItems.LOOK_AT_MY_CLEAN_HORSE_DISC.get());
         simpleBlockItem(ModBlocks.AMETRINE_DOOR);
 
         basicItem(ModItems.HIDE_CAP.get());
@@ -35,7 +34,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         withExistingParent(ModItems.BRISTLY_HORSE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         withExistingParent(ModItems.SAND_BOMB_HORSE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
-        withExistingParent(ModItems.BAD_APPLE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.HENRY_HORSE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
 
     }
 

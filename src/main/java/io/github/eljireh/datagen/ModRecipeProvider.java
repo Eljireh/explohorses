@@ -41,12 +41,42 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.IRON_NUGGET), has(Items.IRON_NUGGET))
                 .save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HIDE_CAP.get())
+                .pattern("XXX")
+                .pattern("X X")
+                .define('X', ModItems.SCRATCHED_HIDE.get())
+                .unlockedBy(getHasName(ModItems.SCRATCHED_HIDE.get()), has(ModItems.SCRATCHED_HIDE.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HIDE_TUNIC.get())
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModItems.SCRATCHED_HIDE.get())
+                .unlockedBy(getHasName(ModItems.SCRATCHED_HIDE.get()), has(ModItems.SCRATCHED_HIDE.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HIDE_PANTS.get())
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .define('X', ModItems.SCRATCHED_HIDE.get())
+                .unlockedBy(getHasName(ModItems.SCRATCHED_HIDE.get()), has(ModItems.SCRATCHED_HIDE.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HIDE_BOOTS.get())
+                .pattern("X X")
+                .pattern("X X")
+                .define('X', ModItems.SCRATCHED_HIDE.get())
+                .unlockedBy(getHasName(ModItems.SCRATCHED_HIDE.get()), has(ModItems.SCRATCHED_HIDE.get()))
+                .save(pRecipeOutput);
+
         // BAD APPLE
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BAD_APPLE.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.HEALING_APPLE.get())
                 .requires(Items.WHITE_DYE)
                 .requires(Items.BLACK_DYE)
                 .requires(Items.APPLE)
-                .unlockedBy(getHasName(ModItems.BAD_APPLE.get()), has(ModItems.BAD_APPLE.get()))
+                .unlockedBy(getHasName(ModItems.HEALING_APPLE.get()), has(ModItems.HEALING_APPLE.get()))
                 .save(pRecipeOutput);
 
         // AMETRINE BLOCK

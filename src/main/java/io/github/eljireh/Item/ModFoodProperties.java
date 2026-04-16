@@ -16,11 +16,11 @@ public class ModFoodProperties {
             // - Apprivoise les chevaux moddés/vanilla
             // - Si mangée : Restaure 4.5 gigots, gros effet de saturation, mais donne Lenteur III pendant 5 secondes
 
-    public static final FoodProperties BAD_APPLE = new FoodProperties.Builder()
+    public static final FoodProperties HEALING_APPLE = new FoodProperties.Builder()
             .nutrition(4) // 2 gigots
             .saturationModifier(2.4f)
-            .effect(new MobEffectInstance(MobEffects.CONFUSION, 200, 1), 1.0f) // Nausée II, 10 secondes, toujours
-            .effect(new MobEffectInstance(MobEffects.HUNGER, 200, 3), 1.0f) // Faim IV, 10 secondes, toujours
+            .effect(new MobEffectInstance(MobEffects.REGENERATION, 200, 1), 1.0f) // Régéneration II, 10 secondes, toujours
+            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 3), 1.0f) // Résistance IV, 10 secondes, toujours
             .build();
 }
 
